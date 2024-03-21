@@ -1,0 +1,262 @@
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Thai', sans-serif;
+  } 
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url("https://static.thairath.co.th/media/dFQROr7oWzulq5FZUEwwbyNbUrKHAcHZAkaXEK3CgHZJivGYhY35tvNovqgS2vy4rnB.jpg");
+    background-position:center ;
+    background-size: cover ;
+  }
+  section{
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeUp 1s ease forwards;
+  }
+  h1{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+  }
+  h2{
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+  }
+  .login-page{
+    position: relative;
+    width: 500px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border: 2px solid #fff;
+  }
+  .login-page img{
+    margin-left:100px;
+    width: 35%;
+    height: 35%;
+    align-items: center;
+    justify-content: center;
+  }
+  .inputbox{
+    position: relative;
+    margin:30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+  }
+  .inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #000000;
+    font-size: 1em;
+    pointer-events: none;
+  }
+  .inputbox input{
+    width :100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+  }
+  input:focus ~ label,
+  input:valid ~ label{
+    top: -5px;
+  }
+  .inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color:#fff;
+    font-size: 1.2em;
+    top:20px;
+  }
+  button{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+   border: none;
+   outline:none;
+   cursor:pointer;
+   font-size: 1em;
+   font-weight: 600;
+   transform: scale(100%);
+   transition: all .5s ease-out;
+  }
+  button:hover{
+    transform: scale(110%);
+    transition: all .5s ease-in;
+  }
+  .Register{
+    text-align: center;
+    margin: 25px 0 10px;
+  }
+  .Register a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+  }
+  .Register a:hover{
+    text-decoration: underline;
+    color: blue;
+  }
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /*.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .form {
+    background-color: #c21010;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: login-anim 0.3s ease-out forwards;
+    max-width: 500px;
+    width: 80%;
+  }
+  
+  h1 {
+    font-weight: bold;
+    color: #113511;
+    margin-bottom: 30px;
+  }
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: #f1f1f1;
+    border-radius: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    border-bottom: 2px solid #6f9d6d;
+  }
+  /*.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}*/
+  /*button {
+    background-color: #113511;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  button:hover {
+    background-color: #5a8961;
+  }
+  
+  .message {
+    text-align: center;
+    margin-top: 20px;
+    color: #6f9d6d;
+  }
+  
+  a {
+    color: #113511;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #5a8961;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .form {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    input[type=text], input[type=password] {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 16px;
+    }
+  }
+  
+  @keyframes login-anim {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }*/
+  

@@ -1,0 +1,115 @@
+.col-sm{
+    border: 1px solid red;
+} 
+.p-3{
+    border: 1px solid black;
+    background-color: aqua;
+}
+#gb-home{
+    background: none;
+    border: none;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+#img-ic{
+    position: relative;
+    left: 15px;
+    margin-bottom: 0;
+}
+#u-icon{
+   font-size: 30px;
+}
+#userName{
+    position: relative;
+    bottom: 10px;
+}
+#u-menu{
+    position: relative;
+    bottom: 25px;
+}
+/*body*/
+#main{
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 5% 0 5%;
+}
+.col{
+    text-align: center;
+}
+
+#main{
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+/*Itemlist*/
+.item-block{
+    width: 50%; 
+    
+    
+    border-radius: 10px; 
+    border: solid 1px #ccc;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    background: #ebebeb;
+    position: relative;
+    bottom: 150px;
+    left: 100px;
+}
+h1{
+    color: #000;
+}
+table {
+    text-align: center;
+    
+    width: 100%;
+    border-spacing: 30px;
+  }
+  th, td {
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #222327;
+  }
+  th {
+    background-color: #222327;
+  }
+  tr {
+    background-color: #222327;
+  }
+
+/*total*/
+.total-block{
+    width: 30%; 
+    border-radius: 10px; 
+    border: solid 1px #ccc;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    background: #ebebeb;
+    position: relative;
+    left: 60%;
+    top: 100px;
+}
+.total-main{
+    color: #000;
+    font-size: 30px;
+}
+.summit{
+    position: relative;
+    top: 450px;
+    width: 100px;
+    height: 50px;
+    left: 85%;
+    font-size: 15px;
+    border-radius: 25px;
+    background-color: #29fd53;
+    padding: 0.2em 0.4em;
+    transition: 0.5s;
+}
+ .summit:hover{
+    background-color: #29fd53;
+    border: 2px solid #29fd53a8;
+ }
+h3{
+    margin: 0;
+    text-align: center;
+    color: red;
+}
